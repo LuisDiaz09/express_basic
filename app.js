@@ -10,6 +10,12 @@ app.get('/',(req,res) => {
     res.send("Hola mundo!")
 })
 
+//Creando una nueva ruta -> localhost:3000/launchx
+app.get('/launchx', (req,res) => {
+    res.send("Bienvenidos a LaunchX")
+})
+
+
 //De esta forma inicializamos la app
 app.listen(port, () => {
     console.log(`La app esta ejecutandose en el puerto ${port}`)
