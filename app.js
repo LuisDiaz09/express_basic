@@ -21,6 +21,12 @@ app.get('/explorersInNode', (req, res) =>{
     res.send(explorer)
 })
 
+//Agregar una nueva ruta que reciba query params
+//Query Params: Recibe parámetros por la URL
+app.get('/explorers/:explorerName', (req,res) => {
+    res.send(req.params)
+})
+
 
 //De esta forma inicializamos la app
 app.listen(port, () => {
